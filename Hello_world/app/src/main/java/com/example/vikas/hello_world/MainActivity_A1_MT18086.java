@@ -1,17 +1,15 @@
 package com.example.vikas.hello_world;
 
 import android.content.Intent;
-import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity_A1_MT18086 extends AppCompatActivity {
 
     String msg1="\0",msg2="\0",msg3="\0",msg4="\0",msg5="\0",msg6="\0",msg7="\0";
 
@@ -99,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
             msg6 = ((EditText) findViewById(R.id.course3)).getText().toString();
             msg7 = ((EditText) findViewById(R.id.course4)).getText().toString();
             String[] records = {msg1, msg2, msg3, msg4, msg5, msg6, msg7};
-            Intent intent = new Intent(getApplicationContext(), Student_Record.class);
+            Intent intent = new Intent(getApplicationContext(), Student_Record_A1_MT18086.class);
             intent.putExtra(MSG, records);
             startActivity(intent);
         }

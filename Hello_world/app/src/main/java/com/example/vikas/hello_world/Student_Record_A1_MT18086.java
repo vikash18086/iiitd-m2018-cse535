@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Student_Record extends AppCompatActivity {
+public class Student_Record_A1_MT18086 extends AppCompatActivity {
 
     private static String state="";
     private static final String tag ="data";
