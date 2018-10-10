@@ -93,7 +93,7 @@ public class Server extends AsyncTask<String, Void, String> {
                                 .getResponseMessage();
 
                         if (serverResponseCode == 200) {
-ed.setProgress(50);
+                            ed.setProgress(50);
                             return "Executed";
                         }
                         fileInputStream.close();

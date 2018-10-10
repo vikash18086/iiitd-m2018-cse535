@@ -185,7 +185,7 @@ public class DataShowFrag extends Fragment {
                 NetworkInfo networkInfo = con_manager.getActiveNetworkInfo();
                 if (networkInfo != null && networkInfo.isConnected()) {
                     Toast.makeText(getContext(), "Internet_available", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(getContext(), "Submit_Successfull", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(), "Submit_Successfull", Toast.LENGTH_SHORT).show();
                     new Server(getActivity()).execute(file.getAbsolutePath());
                 } else {
                     Toast.makeText(getContext(), "No_Internet", Toast.LENGTH_SHORT).show();
