@@ -22,6 +22,7 @@ public class Student_Record_A1_MT18086 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_record);
+
         Intent intent = getIntent();
         String []message = intent.getStringArrayExtra(MSG);
 
