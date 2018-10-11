@@ -37,7 +37,7 @@ public class Server extends AsyncTask<String, Void, String> {
                 byte[] buffer;
                 int maxBufferSize = 1 * 444;
                 File sourceFile = new File(sourceFileUri);
-                if(!InetAddress.getByName("192.168.52.81").isReachable(233))
+                if(!InetAddress.getByName("192.168.52.81").isReachable(233)) //ping type things done
                 {
                     return "Not Excecuted";
                 }
