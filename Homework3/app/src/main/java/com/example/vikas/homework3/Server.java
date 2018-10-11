@@ -10,6 +10,7 @@ import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.net.HttpURLConnection;
+import java.net.InetAddress;
 import java.net.URL;
 
 public class Server extends AsyncTask<String, Void, String> {
@@ -36,6 +37,10 @@ public class Server extends AsyncTask<String, Void, String> {
                 byte[] buffer;
                 int maxBufferSize = 1 * 444;
                 File sourceFile = new File(sourceFileUri);
+                if(!InetAddress.getByName("192.168.52.81").isReachable(233))
+                {
+                    return "Not Excecuted";
+                }
 
                 if (sourceFile.isFile()) {
 
